@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="O melhor aplicativo de contas bancárias de Angola">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Anataniel Diogo">
+
+    <title>myBank.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fontes.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="assets/aos/dist/aos.css">
+
+    <script src="js/jQuery.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/chart.min.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/swiper.js"></script>
+    <script src="assets/aos/dist/aos.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <main class="container">
+        <aside class="my-aside">
+            <div class="my-aside-header">
+                <div class="my-logo">
+                    <a href="">
+                        <h2>myBank.</h2>
+                    </a>
+                </div>
+                <nav class="my-menu">
+                    <ul>
+                        <span class="my-lt-title">Menu</span>
+                        <li><button><i class="fas fa-home"></i> Início</button></li>
+                        <li><button><i class="fas fa-share-alt"></i> Transações</button></li>
+                        <li><button><i class="fas fa-money-check"></i> Cartões</button></li>
+                        <li><button><i class="fas fa-calendar-alt"></i> Calendário</button></li>
+                        <li><button><i class="fas fa-cog"></i> Definições</button></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="my-aside-footer">
+                <nav class="my-menu">
+                    <ul>
+                        <li class=""> <button><i class="fas fa-sun"></i> Modo luz</button></li>
+                        <li><button class="my-active-btn click"><i class="fas fa-sign-out-alt"></i> Sair</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <section class="my-section">
+            <div class="my-section-flex">
+                <div class="my-section-left my-border-right">
+                    <div class="search" data-aos="fade-left">
+                        <form action="" method="post">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="pesquisar">
+                        </form>
+                    </div>
+                    <h2 class="my-bg-title" data-aos="fade-right">Olá, Anataniel!</h2>
+                    <div class="my-panel-button">
+                        <select class="my-droppdown" data-aos="fade-left">
+                            <option value="">Incomes</option>
+                            <option value="">Primeiro item</option>
+                            <option value="">Primeiro item</option>
+                            <option value="">Primeiro item</option>
+                        </select>
+                        <div class="my-panel-button-content" data-aos="fade-right">
+                            <button class="click" onclick="tabmenu(0)">Semana</button>
+                            <button class="click" onclick="tabmenu(1)">Mês</button>
+                            <button class="click" onclick="tabmenu(2)">Ano</button>
+                        </div>
+                    </div>
+                    <div class="my-panel-content">
+                        <div class="my-panel">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                        <div class="my-panel">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem amet voluptate ipsa odit
+                            quia tempora optio voluptates dolorum in aperiam, repellendus ea. Quo tempora eius, nobis
+                            sunt molestiae dolor eveniet!
+                        </div>
+                        <div class="my-panel">
+                            Consectetur adipisicing elit. Magni repudiandae vero, recusandae in, ut inventore voluptatum
+                            quasi nam quod maxime voluptatibus, earum aliquam enim porro quam quia neque molestias.
+                            Itaque.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque at veritatis dolorem quasi
+                            repudiandae aut nemo aspernatur cupiditate temporibus ut adipisci, facere odio totam id
+                            earum ipsa fugiat blanditiis aliquid!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis magni esse eaque,
+                            expedita aperiam consectetur, id suscipit itaque nulla, porro ullam mollitia ipsa
+                            praesentium. Qui odit assumenda laboriosam aperiam similique.
+                        </div>
+                    </div>
+
+                    <div class="my-title-content">
+                        <h2 class="my-title">Últimas transações</h2>
+                        <span>Ver todas</span>
+                    </div>
+
+                    <div class="my-transaction-content" data-aos="fade-right">
+                        <div class="my-transaction click">
+                            <div class="my-trans-user">
+                                <img src="img/user/user4.jpg" alt="">
+                                <div class="my-trans-user-text">
+                                    <h2>Mendes Diogo</h2>
+                                    <span title="Número do cartão">5002890012851334</span>
+                                </div>
+                            </div>
+                            <div class="my-atction">
+                                <span class="my-danger"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                            <div class="my-values">
+                                <span class="my-danger-bg my-border-all"><i class="fas fa-arrow-down"></i>
+                                    150.000Kz</span>
+                            </div>
+                        </div>
+
+                        <div class="my-transaction click">
+                            <div class="my-trans-user">
+                                <img src="img/user/user3.jpg" alt="">
+                                <div class="my-trans-user-text">
+                                    <h2>Stella Everett</h2>
+                                    <span>2025697018985136</span>
+                                </div>
+                            </div>
+                            <div class="my-atction">
+                                <span class="my-success"><i class="fas fa-arrow-left"></i></span>
+                            </div>
+                            <div class="my-values">
+                                <span class="my-success-bg my-border-all"><i class="fas fa-arrow-up"></i>
+                                    35.500Kz</span>
+                            </div>
+                        </div>
+
+                        <div class="my-transaction click">
+                            <div class="my-trans-user">
+                                <img src="img/user/user2.jpeg" alt="">
+                                <div class="my-trans-user-text">
+                                    <h2>Alesandro Diogo</h2>
+                                    <span>34369701898563</span>
+                                </div>
+                            </div>
+                            <div class="my-atction">
+                                <span class="my-danger"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                            <div class="my-values">
+                                <span class="my-danger-bg my-border-all"><i class="fas fa-arrow-down"></i> 1000Kz</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-section-right">
+                    <div class="my-sec-right-user my-border-bottom">
+                        <div class="my-block flex my-tooltip">
+                            <span><i class="fas fa-bolt"></i></span>
+                            <span class="my-tooltiptext">Atividades</span>
+                        </div>
+                        <div class="my-block flex my-tooltip">
+                            <span><i class="fas fa-bell"></i></span>
+                            <span class="my-tooltiptext">Notificação</span>
+                        </div>
+                        <div class="my-block block-user flex">
+                            <img src="img/user/user.jpeg" alt="">
+                            <h2>Anataniel Diogo</h2>
+                        </div>
+                    </div>
+
+                    <div class="my-title-content">
+                        <h2 class="my-title">Seu balanço</h2>
+                        <span><i class="fas fa-ellipsis-h"></i></span>
+                    </div>
+
+                    <div class="my-balance-content" data-aos="fade-right">
+                        <div class="my-balance">
+                            <h2 class="my-bg-title">2.467.372Kz</h2>
+                            <span class="my-border-all"><i class="fas fa-arrow-up"></i>1,2%</span>
+                        </div>
+                    </div>
+
+                    <div class="my-border-bottom my-border-space"></div>
+
+                    <div class="my-title-content">
+                        <h2 class="my-title">Transferir para</h2>
+                        <span><i class="fas fa-ellipsis-h"></i></span>
+                    </div>
+                    
+                    <div class="my-title-content">
+                        <div class="my-transference-content">
+                            <div class="my-transference"  data-aos="fade-left">
+                                <a href="javascript::" class="my-tooltip click">
+                                    <img src="img/user/user.jpeg" alt="">
+                                    <span class="my-tooltiptext">Anataniel Diogo</span>
+                                </a>
+                                <a href="javascript::" class="my-tooltip click my-call-modal-transfer">
+                                    <img src="img/user/user2.jpeg" alt="">
+                                    <span class="my-tooltiptext">Alesandro Diogo</span>
+                                </a>
+                                <a href="javascript::" class="my-tooltip click">
+                                    <img src="img/user/user3.jpg" alt="">
+                                    <span class="my-tooltiptext">Stella Everett</span>
+                                </a>
+                                <a href="javascript::" class="my-tooltip click">
+                                    <img src="img/user/user4.jpg" alt="">
+                                    <span class="my-tooltiptext">Mendes Diogo</span>
+                                </a>
+                                <a href="javascript::" class="my-tooltip click">
+                                    <img src="img/user/noUser.png" alt="">
+                                    <span class="my-tooltiptext">Carlos Pedro</span>
+                                </a>
+                                <a href="javascript::" class="my-border-all my-tooltip click">
+                                    <i class="fas fa-plus"></i>
+                                    <span class="my-tooltiptext">Adicionar amigos</span>
+                                </a>
+                            </div>
+                        </div>
+                        <span>Ver todos</span>
+                    </div>
+
+                    <div class="my-border-bottom my-border-space"></div>
+
+                    <div class="my-title-content">
+                        <h2 class="my-title">Cartões</h2>
+                        <span><i class="fas fa-ellipsis-h"></i></span>
+                    </div>
+
+                    <div class="my-cards-content scroll">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="my-card my-blur my-border-all">
+                                        <div class="my-card-header">
+                                            <div class="my-card-icon"><img src="img/def/chipset.png" alt=""></div>
+                                            <div class="my-card-icon">
+                                                <img src="img/def/cc-visa.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="my-card-body">
+                                            <span>5002890012851334</span>
+                                        </div>
+                                        <div class="my-card-footer">
+                                            <div class="my-card-footer-item">
+                                                <span>Digital use only</span>
+                                                <h2>Anataniel Diogo</h2>
+                                            </div>
+                                            <div class="my-card-footer-item">
+                                                <span>Expiration</span>
+                                                <h2>06/2023</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="my-card my-blur my-border-all">
+                                        <div class="my-card-header">
+                                            <div class="my-card-icon"><img src="img/def/chipset.png" alt=""></div>
+                                            <div class="my-card-icon">
+                                                <img src="img/def/cc-mastercard.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="my-card-body">
+                                            <span>2025697018985136</span>
+                                        </div>
+                                        <div class="my-card-footer">
+                                            <div class="my-card-footer-item">
+                                                <span>Digital use only</span>
+                                                <h2>Anataniel Diogo</h2>
+                                            </div>
+                                            <div class="my-card-footer-item">
+                                                <span>Expiration</span>
+                                                <h2>02/2025</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="my-card my-blur my-border-all">
+                                        <div class="my-card-header">
+                                            <div class="my-card-icon"><img src="img/def/chipset.png" alt=""></div>
+                                            <div class="my-card-icon">
+                                                <img src="img/def/cc-visa.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="my-card-body">
+                                            <span>34369701898563</span>
+                                        </div>
+                                        <div class="my-card-footer">
+                                            <div class="my-card-footer-item">
+                                                <span>Digital use only</span>
+                                                <h2>Anataniel Diogo</h2>
+                                            </div>
+                                            <div class="my-card-footer-item">
+                                                <span>Expiration</span>
+                                                <h2>08/2024</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="my-title-content">
+                        <h2 class="my-title">Informações</h2>
+                    </div>
+
+                    <div class="my-section-right-footer">
+                        <footer>
+                            <ul>
+                                <li><a href="">Ajuda</a></li>
+                                <li><a href="">Termos e condições</a></li>
+                                <li><a href="">Privacidade</a></li>
+                                <li><a href="">Cookies</a></li>
+                            </ul>
+                            <span>Copyright 2021 myBank. | Todos os direitos reservados.</span>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="my-modal-transfer my-border-all">
+            <div class="my-title-content">
+                <h2>Transferir para</h2>
+            </div>
+            <form action="" method="POST">
+                <div class="my-modal-transfer-flex">
+                    <div class="my-modal-trf-left">
+                        <div class="my-modal-input">
+                            <select name="para" class="my-border-all">
+                                <option>Alesandro Diogo</option>
+                                <option>Stella Everett</option>
+                                <option>Mendes Diogo</option>
+                                <option value="4">Carlos Pedro</option>
+                            </select>
+                        </div>
+                        <div class="my-modal-input">
+                            <input type="number" name="valor" placeholder="Valor (ex: 1000Kz)" class="my-border-all">
+                        </div>
+                    </div>
+                    <span class="my-border-right my-span-separator"></span>
+                    <div class="my-modal-trf-rigth">
+                        <div class="my-modal-transfer-user">
+                            <div class="my-modal-transfer-user-image">
+                                <img src="img/user/user2.jpeg" alt="">
+                                <i class="fas fa-certificate" title="Verificado"></i>
+                            </div>
+                            <h2>Alesandro Diogo</h2>
+                            <div class="my-modal-trf-user-btn">
+                                <button class="my-danger-bg click" type="button">Remover</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-modal-form-action">
+                    <input type="button" value="Cancelar" class="click my-modal-transfer-close">
+                    <input type="submit" value="Transferir" class="click my-active-btn">
+                </div>
+            </form>
+        </div>
+
+        <div class="my-back"></div>
+    </main>
+
+    <script type="text/javascript">
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'bar',
+
+            // The data for our dataset
+            data: {
+                labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+                datasets: [{
+                    label: 'Sem func ainda!',
+                    backgroundColor: 'rgba(0,201,167,.1)',
+                    borderWidth: 3,
+                    borderColor: '#00c9a7',
+                    data: [410, 300, 100, 150, 112, 167, 65, 37, 350, 420, 500, 100],
+                    pointBorderColor: '#00c9a7',
+                    pointHoverBorderColor: 'rgba(0,201,167,.5)',
+                    pointBorderWidth: 3,
+                    pointHoverBorderWidth: 10
+                }]
+            },
+
+            // Configuration options go here
+            options: {
+                title: {
+                    display: true,
+                    fontSise: 20,
+                    text: "Ainda não sei qual vai ser a função do gráfico!"
+                }
+            }
+        });
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+    <script type="text/javascript">
+		AOS.init();
+	</script>
+    <script src="js/tabmenu.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
